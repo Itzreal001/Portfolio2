@@ -1,0 +1,508 @@
+body {
+    margin: 0;
+    font-family: 'poppins', monospace;
+    background-color: #132426;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    display: flex;
+    background-color: #132426;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    border-bottom: 1px solid #0e1e1f;
+}
+
+.profile-img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+.name{
+ text-align: left;
+ padding-right: 800px;
+ color: cyan;
+ font-weight: bolder;
+font-size: 20px;
+}
+
+nav a {
+    color: cyan;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.resume-btn {
+    border: 1px solid cyan;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+}
+
+main{
+    padding: 2rem;
+}
+
+h1 {
+    color: cyan;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+}
+
+hero-text{
+    flex: 1;
+    color: #fff;;
+    font-family: 'poppins' sans-serif;
+}
+
+.description{
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 90%;
+    text-align: left;
+}
+
+@keyframes float{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+.code-box{
+flex: 1;
+background: #101f21;
+color: cyan;
+width: 100%;
+max-width: 400px;
+padding: 1.5rem;
+border-radius: 10px;
+text-align: left;
+font-family: monospace;
+box-shadow: 0 10px 20px rgba(0, 255, 255, 0.15);
+transition: transform 0.3 ease, box-shadow 0.3s ease;
+position: relative;
+animation: float 3s ease-in-out infinite;
+}
+
+.code-box:hover{
+    transform: scale(1.03) rotate(1deg);
+    box-shadow: 0 15px 25px rgba(0, 255, 255, 0.3);
+}
+
+pre {
+    margin: 0;
+    overflow-x: auto;
+}
+
+.chat-btn{
+    background: teal;
+    border: none;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.chat-btn button{
+    background-color: cyan;
+    color: #000;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.socials {
+    margin-top: 2rem;
+    margin-bottom: 80px;
+}
+
+.socials,
+.chat-btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socials i {
+    transition: opacity 0.3s ease; 
+  }
+  
+  .socials i:hover {
+    opacity: 0.5; 
+  }
+  
+
+.socials a{
+    color: cyan;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.icons a{
+    color: white;
+    font-size: 1.5rem;
+    background: #144a4e;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.about-box {
+    border: 2px solid cyan; 
+    border-radius: 15px;
+    padding: 1.5rem;
+    background-color: #1f2b2e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid cyan;
+    padding: 20px;
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan;
+  }
+  
+  .about-box p{
+text-align: left;
+  }
+
+#about .about-box {
+    background-color: #1a2a2b;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.1);
+    color: #fff;
+    font-family: monospace;
+    margin: 1.5rem 0;
+}
+
+.about-box h2{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.highlight{
+    color: cyan;
+}
+
+.services {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: #144a4e;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    background-color: #1f2b2e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 20%;
+    min-width: 200px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: white;
+  }
+  
+  .service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-card ul li {
+    font-family: monospace;
+    margin: 0.3rem 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  .projects h2{
+    color: cyan;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: left;
+    border-bottom: #144a4e solid;
+  }
+
+.img-container{
+  position: relative;
+  height: 500vh; 
+  padding-top: 100px;
+  background-color: #132426;
+  padding: 100px 0;
+}
+
+.project-img{
+  position: sticky;
+  top: 100px;
+  margin-bottom: 50px; 
+  z-index: 1;
+}
+
+.project-img img {
+  width: 90vw;
+  max-width: 1200px; 
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 100vw;
+  display: block;
+}
+
+.form-wrapper {
+  padding: 40px;
+  box-shadow: 0 0 5px cyan, 0 0 7px cyan;
+}
+
+.top {
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.form-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.form-container {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  animation: glowPulse 3s ease-in-out infinite;
+  background-color: #0f1a1b;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  background-color: #0f1a1b;
+  color: cyan;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+.side-text {
+  font-family:'poppins' sans-serif;
+  max-width: 400px;
+  color: cyan;
+  font-size: 20px;
+  padding-left: 200px;
+  text-align: left;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 6px cyan; }
+  50% { box-shadow: 0 0 12px cyan, 0 0 20px cyan; }
+  100% { box-shadow: 0 0 6px cyan; }
+}
+
+.buttn{
+  color: #fff;
+  background-color: #0f1a1b;
+  border: 1px solid cyan;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  .bottom{
+ border-top: #144a4e solid;
+ font-size: 20px;
+ padding-top: 20px;
+  
+}
+
+.icon-container ul{
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .name {
+        padding-right: 0;
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .code-box {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .socials,
+    .chat-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projects h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .img-container {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .project-img img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .form-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .side-text {
+        padding-left: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .icon-container ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .top {
+        font-size: 28px;
+    }
+
+    .bottom {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
