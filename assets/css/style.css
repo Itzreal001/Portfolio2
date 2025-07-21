@@ -444,7 +444,7 @@ input[type="text"] {
     .service-container {
         flex-direction: column;
         align-items: center;
-        padding-right: 20px
+        padding-right: 25px
     }
 
     .service-card {
