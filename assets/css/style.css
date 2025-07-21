@@ -449,6 +449,7 @@ input[type="text"] {
     .service-card {
         width: 100%;
         max-width: 300px;
+        padding-right: 20px
     }
 
     .projects h2 {
